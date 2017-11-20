@@ -16,7 +16,15 @@ describe('MainComponent', function () {
     this.MainComponent = createComponent(Main);
   });
 
-  it('should have its component name as default className', function () {
-    expect(this.MainComponent.props.className).to.equal('index');
+  it('should have its component name as expected', function () {
+    expect(this.MainComponent.ref).to.equal('app');
+    expect(this.MainComponent.type).to.equal('div');
+    expect(this.MainComponent.props.children[0].type).to.equal('div');
+    expect(this.MainComponent.props.children[0].props.className).to.equal('sidebar jsc-sidebar');
+    expect(this.MainComponent.props.children[0].props.children.type).to.equal('ul');
+    expect(this.MainComponent.props.children[0].props.children.props.className).to.equal('sidebar-list');
+    expect(this.MainComponent.props.children[1].type).to.equal('div');
+    expect(this.MainComponent.props.children[1].props.className).to.equal('main-content');
   });
+
 });

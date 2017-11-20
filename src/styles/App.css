@@ -9,13 +9,15 @@ input {text-align:center;width:360px;}
 .wrapper { width: 100%; box-sizing: border-box; border-top: 2px solid #6c6c6c; background-color: #fefefe; }
 .link-menu { font-size: 2.2rem; }
 .link-menu:hover { color: #807d7d; }
-.main-content { padding: 50px 0 30px; text-align: center; margin: 100px 0 0 300px;font-family: "华文隶书";}
+.main-content { padding: 50px 0 30px; text-align: center; margin: 100px 0 0 200px;font-family: "华文隶书";}
 .headline { font-size: 5rem; font-weight: 400; }
 .headline-main { color: #3c3c3c; }
 .download { padding-top: 40px; }
 .btn-download { display: inline-block; text-align: center; padding: 6px; background-color: #424242; color: white; border: 2px solid #6c6c6c; font-size: 1.2rem; }
 .btn-download:hover { background-color: #6c6c6c; color: #ececec; border: 2px solid #424242; }
-.corner {position:fixed;top:0;right:0;margin: 0 80px 0 0;font-size: 1.2rem;font-family: "华文隶书";}
+.corner { position:fixed;top:0;right:0;margin: 0 80px 0 0;font-size: 1.2rem;font-family: "华文隶书";}
+.corner p{font-size: 2rem;}
+.line-through{text-Decoration: line-through }
 .sidebar { background-color: #312f2f; }
 .sidebar li + li { margin-top: 12px; }
 .sidebar li a { padding: 4px 10px; display: block; color: #cecece; }
