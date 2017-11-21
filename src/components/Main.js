@@ -24,7 +24,7 @@ let AppComponent = React.createClass({
     }
     if(num === '1'){
       now_page = 1;
-      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lib one has been done</span>';
+      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lab one has been done</span>';
       ReactDOM.findDOMNode(this.refs['part1']).innerHTML= 'Eventual score : 75';
       ReactDOM.findDOMNode(this.refs['part2']).innerHTML = 'Max score : 75';
       if (memory[now_page]){ReactDOM.findDOMNode(this.refs['detail']).innerHTML = memory[now_page];}
@@ -32,7 +32,7 @@ let AppComponent = React.createClass({
     }
     if(num === '2'){
       now_page = 2;
-      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lib two has been done</span>';
+      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lab two has been done</span>';
       ReactDOM.findDOMNode(this.refs['part1']).innerHTML = 'Phases Defused : 7';
       ReactDOM.findDOMNode(this.refs['part2']).innerHTML = 'Explosions : 3';
       if (memory[now_page]){ReactDOM.findDOMNode(this.refs['detail']).innerHTML = memory[now_page];}
@@ -40,7 +40,7 @@ let AppComponent = React.createClass({
     }
     if(num === '3'){
       now_page = 3;
-      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lib three has been done</span>';
+      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lab three has been done</span>';
       ReactDOM.findDOMNode(this.refs['part1']).innerHTML = 'Eventual score : 60';
       ReactDOM.findDOMNode(this.refs['part2']).innerHTML = 'Max score : 60';
       if (memory[now_page]){ReactDOM.findDOMNode(this.refs['detail']).innerHTML = memory[now_page];}
@@ -58,7 +58,7 @@ let AppComponent = React.createClass({
       now_page = 5;
       let dayleft = (28 - myDate.getDate()) + 31 *  (10 - myDate.getMonth()) + 365 * (2017 - myDate.getFullYear());
       let hourleft = 24 * (dayleft - 1) +  (24 - myDate.getHours());
-      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lib four is waiting for being done</span>';
+      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lab four is waiting for being done</span>';
       ReactDOM.findDOMNode(this.refs['part1']).innerHTML= 'Deadline : 00:00 11/28/2017';
       if (dayleft > 0){ReactDOM.findDOMNode(this.refs['part2']).innerHTML = 'Days left : '+ dayleft + ' ( ' + hourleft + ' hours left )';}
       else {ReactDOM.findDOMNode(this.refs['part2']).innerHTML = 'Beyond the deadline'}
@@ -67,7 +67,7 @@ let AppComponent = React.createClass({
     }
     if(num === '6'){
       now_page = 6;
-      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lib five has not been shown</span>';
+      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lab five has not been shown</span>';
       ReactDOM.findDOMNode(this.refs['part1']).innerHTML = 'May be shown on 11/30/2017';
       ReactDOM.findDOMNode(this.refs['part2']).innerHTML = 'Ddl may on 12/8/2017';
       if (memory[now_page]){ReactDOM.findDOMNode(this.refs['detail']).innerHTML = memory[now_page];}
@@ -86,7 +86,7 @@ let AppComponent = React.createClass({
     }
     if(num === '8'){
       now_page = 8;
-      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lib six has not been shown</span>';
+      ReactDOM.findDOMNode(this.refs['head']).innerHTML = '<span class="headline-main">The lab six has not been shown</span>';
       ReactDOM.findDOMNode(this.refs['part1']).innerHTML = 'May be shown on 12/14/2017';
       ReactDOM.findDOMNode(this.refs['part2']).innerHTML = 'Ddl may on 12/25/2017';
       if (memory[now_page]){ReactDOM.findDOMNode(this.refs['detail']).innerHTML = memory[now_page];}
@@ -110,9 +110,9 @@ let AppComponent = React.createClass({
     let thingDOM = ReactDOM.findDOMNode(this.refs['thin'+ ref]);
     if  (innerDOM.innerHTML === 'Done✔'){
       innerDOM.innerHTML = 'Wait✘';
-      if (thingDOM.name === 'four'){thingDOM.innerHTML = 'Lib Four';}
-      if (thingDOM.name === 'five'){thingDOM.innerHTML = 'Lib Five';}
-      if (thingDOM.name === 'six'){thingDOM.innerHTML = 'Lib Six';}
+      if (thingDOM.name === 'four'){thingDOM.innerHTML = 'Lab Four';}
+      if (thingDOM.name === 'five'){thingDOM.innerHTML = 'Lab Five';}
+      if (thingDOM.name === 'six'){thingDOM.innerHTML = 'Lab Six';}
       if (thingDOM.name === 'english'){thingDOM.innerHTML = 'English Exam';}
       if (thingDOM.name === 'final'){thingDOM.innerHTML = 'ICS Final Exam';}
       things_waitied ++;
@@ -125,9 +125,9 @@ let AppComponent = React.createClass({
     }
     else if  (innerDOM.innerHTML === 'Hurry❤'){
       innerDOM.innerHTML = 'Done✔';
-      if (thingDOM.name === 'four'){thingDOM.innerHTML = '<span class= "line-through">Lib Four</span>';}
-      if (thingDOM.name === 'five'){thingDOM.innerHTML = '<span class= "line-through">Lib Five</span>';}
-      if (thingDOM.name === 'six'){thingDOM.innerHTML = '<span class= "line-through">Lib Six</span>';}
+      if (thingDOM.name === 'four'){thingDOM.innerHTML = '<span class= "line-through">Lab Four</span>';}
+      if (thingDOM.name === 'five'){thingDOM.innerHTML = '<span class= "line-through">Lab Five</span>';}
+      if (thingDOM.name === 'six'){thingDOM.innerHTML = '<span class= "line-through">Lab Six</span>';}
       if (thingDOM.name === 'english'){thingDOM.innerHTML = '<span class= "line-through">English Exam</span>';}
       if (thingDOM.name === 'final'){thingDOM.innerHTML = '<span class= "line-through">ICS Final Exam</span>';}
       things_hurried --;
@@ -155,21 +155,21 @@ let AppComponent = React.createClass({
         <div className="sidebar jsc-sidebar">
           <ul className="sidebar-list">
             <li><a href="#" ref="g1" style={{float:'right'}} >Done✔</a></li>
-            <li><a href="#" ref="thing1" onClick={this.Search.bind(this,'1')}><span style={{textDecoration: 'line-through'}}>Lib One</span></a></li>
+            <li><a href="#" ref="thing1" onClick={this.Search.bind(this,'1')}><span style={{textDecoration: 'line-through'}}>Lab One</span></a></li>
             <li><a href="#" ref="g2" style={{float:'right'}} >Done✔</a></li>
-            <li><a href="#" ref="thing2" onClick={this.Search.bind(this,'2')}><span style={{textDecoration: 'line-through'}}>Lib Two</span></a></li>
+            <li><a href="#" ref="thing2" onClick={this.Search.bind(this,'2')}><span style={{textDecoration: 'line-through'}}>Lab Two</span></a></li>
             <li><a href="#" ref="g3" style={{float:'right'}} >Done✔</a></li>
-            <li><a href="#" ref="thing3" onClick={this.Search.bind(this,'3')}><span style={{textDecoration: 'line-through'}}>Lib Three</span></a></li>
+            <li><a href="#" ref="thing3" onClick={this.Search.bind(this,'3')}><span style={{textDecoration: 'line-through'}}>Lab Three</span></a></li>
             <li><a href="#" ref="g4" style={{float:'right'}} >Done✔</a></li>
             <li><a href="#" ref="thing4" onClick={this.Search.bind(this,'4')}><span style={{textDecoration: 'line-through'}}>ICS Mid Exam</span></a></li>
             <li><a href="#" ref="g5" onClick={this.Change.bind(this,'g5')} style={{float:'right'}} >Hurry❤</a></li>
-            <li><a href="#" name="four" ref="thing5" onClick={this.Search.bind(this,'5')}>Lib Four</a></li>
+            <li><a href="#" name="four" ref="thing5" onClick={this.Search.bind(this,'5')}>Lab Four</a></li>
             <li><a href="#" ref="g6" onClick={this.Change.bind(this,'g6')} style={{float:'right'}} >Wait✘</a></li>
-            <li><a href="#" name="five" ref="thing6" onClick={this.Search.bind(this,'6')}>Lib Five</a></li>
+            <li><a href="#" name="five" ref="thing6" onClick={this.Search.bind(this,'6')}>Lab Five</a></li>
             <li><a href="#" ref="g7" onClick={this.Change.bind(this,'g7')} style={{float:'right'}} >Wait✘</a></li>
             <li><a href="#" name="english" ref="thing7" onClick={this.Search.bind(this,'7')}>English Exam</a></li>
             <li><a href="#" ref="g8" onClick={this.Change.bind(this,'g8')} style={{float:'right'}} >Wait✘</a></li>
-            <li><a href="#" name="six" ref="thing8" onClick={this.Search.bind(this,'8')}>Lib Six</a></li>
+            <li><a href="#" name="six" ref="thing8" onClick={this.Search.bind(this,'8')}>Lab Six</a></li>
             <li><a href="#" ref="g9" onClick={this.Change.bind(this,'g9')} style={{float:'right'}} >Wait✘</a></li>
             <li><a href="#" name="final" ref="thing9" onClick={this.Search.bind(this,'9')}>ICS Final Exam</a></li>
             <br />
